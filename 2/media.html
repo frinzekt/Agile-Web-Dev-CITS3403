@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Exploring New Media Tags</title>
+	</head>
+	<body>
+		<div>
+			<picture>
+				<source srcset="../public/images/dog.jpg" media="(min-width: 800px)" />
+				<img src="../public/images/dog2.jpg" />
+			</picture>
+		</div>
+
+		<div>
+			<video width="1280" height="720">
+				<source src="../public/video/1.mp4" type="video/mp4" media="(min-width: 800px)" />
+				<source src="../public/video/2.wmv" type="video/wmv" />
+				<track src="../public/video/sample.vtt" kind="subtitles" srclang="en" label="English" />
+				Your browser does not support the video tag.
+			</video>
+		</div>
+		<div>
+			<audio controls>
+				<source src="../public/audio/1.mp3" type="audio/mpeg" media="(min-width: 800px)" />
+				<source src="../public/audio/2.wav" type="audio/wav" />
+				Your browser does not support the audio element.
+			</audio>
+		</div>
+		<div><object width="100%" height="500px" data="../1/index.html"></object></div>
+		<div><object width="100%" height="500px" data="https://file-examples.com/" type="text/html"></object></div>
+		<div>
+			<embed src="https://file-examples.com/" width="200" height="200" />
+		</div>
+		<div><object width="100%" height="500px" data="../public/images/dog2.jpg"></object></div>
+		<div><iframe width="420" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1""> </iframe></div>
+	</body>
+</html>
